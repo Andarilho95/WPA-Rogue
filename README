@@ -18,7 +18,6 @@ Este projeto é **apenas para fins educacionais e de aprendizado**, e deve ser u
 
 - [x] Listagem e seleção de interfaces Wi-Fi disponíveis
 - [x] Checagem de processos e serviços que impedem o modo monitor (ex: NetworkManager, wpa_supplicant)
-- [x] Checagem de processos que impedem o modo monitor (ex: NetworkManager, wpa_supplicant)
 
 ---
 
