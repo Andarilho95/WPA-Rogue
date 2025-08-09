@@ -1,0 +1,60 @@
+# 🛠️ Projeto: Captura Automatizada de WPA Handshake com Bash
+
+Este projeto tem como objetivo **automatizar a captura de handshakes WPA** de redes Wi-Fi de forma mais **eficiente e discreta**, utilizando ferramentas da suíte **aircrack-ng**, como `airmon-ng`, `airodump-ng` e `aireplay-ng`.
+
+> ⚠️ Este script ainda está em desenvolvimento e será aprimorado com novas funcionalidades ao longo do tempo.
+
+---
+
+## 🎯 Objetivo
+
+Criar uma ferramenta simples em Bash que permita automatizar o processo de captura de handshakes, reduzindo a necessidade de interação manual e tornando o processo mais rápido e menos perceptível.
+
+Este projeto é **apenas para fins educacionais e de aprendizado**, e deve ser utilizado de forma ética e legal.
+
+---
+
+## ✅ Funcionalidades atuais
+
+- [x] Listagem e seleção de interfaces Wi-Fi disponíveis
+<<<<<<< HEAD
+- [x] Checagem de processos e serviços que impedem o modo monitor (ex: NetworkManager, wpa_supplicant)
+=======
+- [x] Checagem de processos que impedem o modo monitor (ex: NetworkManager, wpa_supplicant)
+>>>>>>> a7c7b96 (aprendendo a dar commit)
+
+---
+
+## 🚧 Funcionalidades em desenvolvimento
+
+- [ ] Finalização automática dos processos conflitantes
+- [ ] Ativação completa do modo monitor (com feedback e verificação)
+- [ ] Alteração automática ou manual do endereço MAC da interface (para anonimato)
+- [ ] Deautenticação automática de clientes (`aireplay-ng`)
+- [ ] Seleção e visualização de alvos (redes e clientes)
+- [ ] Deautenticação de clientes sutil para evitar detecção(opcional, com `aireplay-ng`)
+- [ ] Captura automatizada do handshake WPA
+- [ ] Salvamento em formato Hashcat WPA-PBKDF2-PMKID+EAPOL ou `.cap`
+- [ ] Detecção automática de sucesso na captura do handshake
+- [ ] Interface de menu interativo para fluxo completo
+- [ ] Seleção e visualização de alvos (redes e clientes)
+- [ ] Conversão dos arquivos `.cap` para formato compatível com Hashcat (`.hccapx`)
+- [ ] Organização dos arquivos de captura em diretórios específicos
+---
+
+## 💻 Requisitos
+
+- Sistema Linux (testado em Arch Linux)
+- Ferramentas:
+  - `aircrack-ng` (com `airmon-ng`, `airodump-ng`, `aireplay-ng`, 'macchanger', 'iw')
+  - Bash Shell
+- Permissões de superusuário (`sudo` ou root)
+
+---
+
+## ▶️ Como usar
+
+1. Torne o script executável:
+   ```bash
+   chmod +x wpa_handshake.sh
+
